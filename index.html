@@ -1,0 +1,49 @@
+<!DOCTYPE html><html>
+<!--John Peacock week 3 final instagrid project-->
+<head><meta charset="utf-8">
+      <title>W3 InstaGrid Project</title>
+
+      <meta name="viewport"  content="width=device-width, initial-scale=1" />
+
+      <meta name="description" content="A website">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+      <!-- load custom CSS file second for specificity  -->
+      <link href="build/css/style.min.css" rel="stylesheet" />
+</head>
+<body>
+<h1 class="screen-reader">Instagrid</h1>
+<div class="search-wrapper">
+
+    <div class="logo">
+      <img src="images/instagrid-logo.svg" title="Instagrid Logo" alt="Instagrid Logo"/>
+    </div>
+
+    <form name="search-form">
+      <div class="p-holder">
+      <input type="text" name="hash-search" id="hash-search" value="" placeholder=" Search for a hashtag " />
+      <button type="submit" class="insta-btn">
+      <span class="screen-reader">Search</span><i class="fa fa-search fa-2x"></i>
+    </button>
+    </div>
+    </form>
+
+</div><!-- end logo search button wrapper -->
+<div class="loader"><img src="images/ajax-loader.gif"/></div>
+<div class="instagrid">
+
+  <ul></ul>
+
+  </div>
+
+    <div class="footer">
+      <p>&copy; Copyright 2016 <span class="allcaps">Instagrid</span></p>
+    </div>
+
+<!-- jQuery  -->
+<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+<!-- project javascript -->
+ <script src="build/js/custom-instagrid.min.js"></script>
+</body>
+</html>
