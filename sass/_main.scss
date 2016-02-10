@@ -36,62 +36,83 @@
 .insta-btn:hover {
   color: #e2231a;
 }
+#try-again {
+    padding-top:4px;
+    text-align:center;
+    font-size:1.2rem;
+    font-style: italic;
+    display:none;
+    color:#999;
+}
 
 /* instagrid classes mobile first */
 
 .instagrid {
-  margin: 0 auto;
-  width:100%;
+    margin: 0 auto;
+    width:100%;
 }
 .loader img {
-  max-width:70px;
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  margin-top: -35px;
-  margin-left: -35px;
-  display:none;
-  z-index:2;
+    max-width:70px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+    display:none;
+    z-index:2;
 }
 
 .instagrid ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
 }
 .instagrid li {
-  flex: 0 1 100%;
-  max-width: 100%;
+    flex: 0 1 100%;
+    max-width: 100%;
 }
 
 .instagrid li .list-wrapper {
-  position: relative;
+    position: relative;
 }
 
  .instagrid img {
     width: 100%;
   }
 .user-wrapper {
-  background: rgba(0,0,0,.6);
-  position:absolute;
-  bottom: 0;
-  color: #fff;
-  display: flex;
-  font-size: 10px;
-  font-size: 1rem;
-  padding: .5rem;
-  width:100%
+    background: rgba(0,0,0,.6);
+    position:absolute;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    font-size: 10px;
+    font-size: 1rem;
+    padding: .5rem;
+    width:100%
+  }
+  .fa-heart:before {
+      content: "\f004";
+      padding-right: 2px;
+      padding-left: 6px;
+  }
+  .fa-comment-o:before {
+      content: "\f0e5";
+      padding-right: 2px;
   }
 
 .social-wrapper {
-  text-align: right;
-  width: 67%;
+    text-align: right;
+    width: 67%;
 }
 
-.social-wrapper p:first-child {
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.social-wrapper  h3 {
+    overflow: hidden;
+    text-overflow: ellipsis; // i love this feature
+    white-space: nowrap;
+    padding: .25rem;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .prof-pic {
@@ -139,68 +160,69 @@ input[type="text"] {
       padding:15px;
   }
 
-    input[type="text"] {
-      width:16rem;
-  }
+        input[type="text"] {
+          width:16rem;
+      }
 
-    input[type="text"] {
-      font-size:1.2rem;
-  }
+        input[type="text"] {
+          font-size:1.2rem;
+      }
 
-    .logo, .logo img, .p-holder {
-      height: 34px;
-  }
+        .logo, .logo img, .p-holder {
+          height: 34px;
+      }
 
-    .logo {
-        margin-bottom: .5rem;
-        margin-right: 10px;
-        align-items:center;
-  }
+        .logo {
+          margin-bottom: .5rem;
+          margin-right: 10px;
+          align-items:center;
+      }
+
 /* instagrid classes medium browsers */
-    .prof-pic {
-        max-width:50px;
-        padding:.125rem;
-  }
 
     .instagrid li {
-        flex: 0 1 33.33%;
-        max-width: 33.33%;
-  }
-    .user-wrapper {
-
-        padding: .125rem;
-
-  }
+          flex: 0 1 33.33%;
+          max-width: 33.33%;
+      }
+        .user-wrapper {
+          padding: .125rem;
+      }
 
 } /* 600px */
 
 @media screen and (min-width: 1000px) {
-  .search-wrapper { /* wraps logo search grid and footer*/
-      justify-content:flex-start;
-      padding:20px;
-  }
+          .search-wrapper { /* wraps logo search grid and footer*/
+              justify-content:flex-start;
+              padding:20px;
+          }
 
-  .logo, .logo img, .p-holder {
-      height: 40px;
-  }
+          .logo, .logo img, .p-holder {
+              height: 40px;
+          }
 
-  input[type="text"] {
-      font-size:1.4rem;
-      width:20rem;
-  }
+          input[type="text"] {
+              font-size:1.4rem;
+              width:20rem;
+          }
 
-  .instagrid li {
-      flex: 0 1 25%;
-      max-width: 25%;
-}
-  .user-wrapper {
-      padding: .25rem;
-}
+          .instagrid li {
+              flex: 0 1 25%;
+              max-width: 25%;
+        }
+          .user-wrapper {
+              padding: .25rem;
+        }
 
-  .footer {
-      text-align:left;
-      padding-left: 30px;
-}
+          .footer {
+              text-align:left;
+              padding-left: 30px;
+        }
+} /* 1000px */
 
+@media screen and (min-width: 1240px) {
 
-} /* 1240px */
+        .search-wrapper, .instagrid, .footer {
+            margin: 0 auto;
+            max-width:1240px;
+          }
+  }/* 1240px */

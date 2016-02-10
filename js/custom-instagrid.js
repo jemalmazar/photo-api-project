@@ -2,10 +2,13 @@
 $(function(){
   $('form[name="search-form"]').on('submit', function(event) {
     event.preventDefault();
-    $('.search-wrapper').css('height', 'auto');
-      $('.loader img').css('display', 'block');
-    // (".loader").fadeIn('fast').delay(4000).fadeOut();
 
+              if ($('#hash-search').val() === '') {
+                  $('#try-again').fadeIn('fast').delay(4000).fadeOut();
+            } else {
+                  $('.search-wrapper').css('height', 'auto');
+                  $('.loader img').css('display', 'block');
+}
     var hashSearch = $('#hash-search').val();
     var newLine ='';
 
@@ -27,7 +30,7 @@ $(function(){
         newLine+='<img src="'+value.caption.from.profile_picture+'"/>';
         newLine+='</div>';
         newLine+='<div class="social-wrapper">';
-        newLine+='<p>'+value.caption.from.username+'</p>';
+        newLine+='<h3>'+value.caption.from.username+'</h3>';
         newLine+='<p><i class="fa fa-comment-o"></i>'+value.comments.count;
         newLine+='<i class="fa fa-heart"></i>'+value.likes.count+'</p>';
         newLine+='</div>';
