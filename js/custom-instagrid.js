@@ -1,6 +1,7 @@
 
 $(function(){
-  $('form[name="search-form"]').on('submit', function(event) {
+
+   $('form[name="search-form"]').on('submit', function(event) {
     event.preventDefault();
 
               if ($('#hash-search').val() === '') {
@@ -9,6 +10,7 @@ $(function(){
                   $('.search-wrapper').css('height', 'auto');
                   $('.loader img').css('display', 'block');
 }
+
     var hashSearch = $('#hash-search').val();
     var newLine ='';
 
@@ -44,19 +46,6 @@ $('.instagrid ul').empty();
     $('.instagrid ul').append(newLine);
     $('.loader img').hide();
 
-
     });
   });
 });
-
-// Wait for window load
-// $(window).load(function() {
-//   // Animate loader off screen
-//   $(".loader").fadeOut("slow");;
-// });
-//data
-//images
-//thumbnail
-//standard_resolution
-//username
-//profile_picture:

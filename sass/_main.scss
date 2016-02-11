@@ -103,12 +103,12 @@
 
 .social-wrapper {
     text-align: right;
-    width: 67%;
+    width: 75%;
 }
 
 .social-wrapper  h3 {
     overflow: hidden;
-    text-overflow: ellipsis; // i love this feature
+    text-overflow: ellipsis; /*i love this feature */
     white-space: nowrap;
     padding: .25rem;
     font-size: 1.1rem;
@@ -118,7 +118,7 @@
 .prof-pic {
     height: auto;
     overflow: hidden;
-    width: 33%;
+    width: 25%;
 }
 
 .prof-pic img {
