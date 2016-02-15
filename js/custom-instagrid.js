@@ -11,7 +11,7 @@ $(function(){
                   $('.loader img').css('display', 'block');
 }
 
-    var hashSearch = $('#hash-search').val();
+    var hashSearch = $('#hash-search').val().replace(' ', '');
     var newLine ='';
 
     $.ajax({
