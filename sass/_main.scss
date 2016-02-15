@@ -154,7 +154,7 @@ input[type="text"] {
 
 @media screen and (min-width: 600px) {
   .search-wrapper { /* 600 px wraps logo search box */
-      justify-content:flex-start;
+      justify-content:center;
       flex-direction:row;
       flex-wrap: wrap;
       padding:15px;
@@ -187,7 +187,7 @@ input[type="text"] {
         .user-wrapper {
           padding: .125rem;
       }
-      
+
 } /* 600px */
 
 @media screen and (min-width: 1000px) {
@@ -218,11 +218,3 @@ input[type="text"] {
               padding-left: 30px;
         }
 } /* 1000px */
-
-@media screen and (min-width: 1240px) {
-
-        .search-wrapper, .instagrid, .footer {
-            margin: 0 auto;
-            max-width:1240px;
-          }
-  }/* 1240px */
